@@ -34,9 +34,9 @@ def deposit():
 
 @app.route('/calculator/minus',methods = ['POST'])
 def withdraw():
-    global firstnumber
-    global secondnumber
-    global outcome
+   global firstnumber
+   global secondnumber
+   global outcome
    calculate = request.get_json()
    calculate["type"] = "minus"
    calculate["time"] = datetime.now()
